@@ -29,7 +29,7 @@
         "tags": [
           "clients"
         ],
-        "description": "",
+        "description": "Retrieve a list of all clients from the database.",
         "produces": [
           "application/json"
         ],
@@ -43,7 +43,7 @@
         "tags": [
           "clients"
         ],
-        "description": "",
+        "description": "Create a new client by providing client information in the request body.",
         "parameters": [
           {
             "name": "body",
@@ -94,7 +94,7 @@
         "tags": [
           "clients"
         ],
-        "description": "",
+        "description": "Retrieve information about a single client based on their unique ID.",
         "produces": [
           "application/json"
         ],
@@ -116,7 +116,7 @@
         "tags": [
           "clients"
         ],
-        "description": "",
+        "description": "Update an existing client's information based on their unique ID. Replace the existing client data with the new data provided in the request body.",
         "parameters": [
           {
             "name": "id",
@@ -171,7 +171,7 @@
         "tags": [
           "clients"
         ],
-        "description": "",
+        "description": "Delete a client based on their unique ID.",
         "parameters": [
           {
             "name": "id",

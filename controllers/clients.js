@@ -43,7 +43,7 @@ const createClient = async (req, res) => {
     try {
         const response = await mongodb.getDatabase().db().collection('clients').insertOne(client);
         if (response.acknowledged) {
-            res.status(204).send();
+            res.status(204).send(); // No Content
         } else {
             res.status(500).json({ error: 'Some error occurred while creating the client' });
         }
@@ -68,7 +68,7 @@ const updateClient = async (req, res) => {
     try {
         const response = await mongodb.getDatabase().db().collection('clients').replaceOne({ _id: clientId }, client);
         if (response.modifiedCount > 0) {
-            res.status(204).send();
+            res.status(204).send(); // No Content
         } else {
             res.status(500).json({ error: 'Some error occurred while updating the client' });
         }
@@ -83,7 +83,7 @@ const deleteClient = async (req, res) => {
     try {
         const response = await mongodb.getDatabase().db().collection('clients').deleteOne({ _id: clientId });
         if (response.deletedCount > 0) {
-            res.status(204).send();
+            res.status(204).send(); // No Content
         } else {
             res.status(500).json({ error: 'Some error occurred while deleting the client' });
         }
