@@ -5,17 +5,16 @@
     "description": "Clients Api",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "project2-olc8.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
     "/": {
       "get": {
         "tags": [
-          "Hello World"
+          "Clients API"
         ],
         "description": "",
         "responses": {
